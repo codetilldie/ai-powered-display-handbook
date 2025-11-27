@@ -23,7 +23,10 @@
 如果你在选购过程中遇到了不理解的术语，可以直接通过目录跳转到对应章节。
 *   **纠结面板？** -> 查看 [面板技术解析](lcd-types.md) 或 [OLED](oled.md)。
 *   **看不懂色域图？** -> 查看 [色彩科学](color-gamut.md)。
-*   **担心护眼？** -> 查看 [护眼与健康](blue-light.md)。
+7. **护眼与健康**
+   - [低蓝光技术 (Low Blue Light)](blue-light.md)
+   - [调光方式: DC 调光 vs PWM 频闪](dimming.md)
+   - [人体工学与支架 (Ergonomics)](ergonomics.md)
 
 ### 2. 系统学习
 如果你想系统性地建立对显示技术的认知，建议按照以下顺序阅读：
