@@ -33,8 +33,9 @@ jobs:
       - name: Prepare index.md
         run: |
           # 将 README.md 复制到 docs/index.md 作为首页
-          # 如果 README 中包含相对路径的图片链接，这里可能需要额外处理，但目前只是文本和 md 链接
           cp README.md docs/index.md
+          # 修正相对链接：将 (docs/xxx.md) 替换为 (xxx.md)
+          sed -i 's|(docs/|(|g' docs/index.md
 
       - name: Build and Deploy
         run: mkdocs gh-deploy --force
