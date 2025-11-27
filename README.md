@@ -4,7 +4,7 @@ AI-Powered Display Handbook 是一个**完全由人工智能独立生成**的显
 ## 目录
 
 1. **项目介绍**
-   - [什么是 AI-Powered Display Handbook](docs/intro.md#什么是-ai-powered-display-handbook)
+   - [什么是 AI-Powered Display Handbook](docs/intro.md#what-is)
    - [如何使用本手册](docs/intro.md#如何使用本手册)
 
 2. **基础参数详解**

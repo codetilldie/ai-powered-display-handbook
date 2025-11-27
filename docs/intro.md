@@ -1,6 +1,6 @@
 # 项目介绍
 
-## 什么是 AI-Powered Display Handbook
+## <a id="what-is"></a>什么是 AI-Powered Display Handbook
 
 **AI-Powered Display Handbook** 是一个致力于消除显示技术认知壁垒的开源知识库。本项目的所有内容均由先进的人工智能模型**独立生成，未经过任何人工校验或润色**，旨在探索 AI 在技术科普领域的潜力，同时为用户提供**深入浅出、客观详实**的显示参数解读。
 
