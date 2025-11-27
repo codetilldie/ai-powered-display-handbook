@@ -1,8 +1,8 @@
 site_name: AI-Powered Display Handbook
 site_description: AI生成、人工校验的显示技术参数深度解析手册。
 site_author: AI-Powered Display Handbook Team
-repo_url: https://github.com/william-lynn/ai-powered-display-handbook
-repo_name: william-lynn/ai-powered-display-handbook
+repo_url: https://github.com/codetilldie/ai-powered-display-handbook
+repo_name: codetilldie/ai-powered-display-handbook
 edit_uri: edit/main/docs/
 
 theme:
