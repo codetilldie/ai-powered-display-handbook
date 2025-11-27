@@ -1,0 +1,40 @@
+name: Deploy MkDocs with PDF
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install system dependencies for PDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+          # 安装中文字体
+          sudo apt-get install -y fonts-noto-cjk
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Prepare index.md
+        run: |
+          # 将 README.md 复制到 docs/index.md 作为首页
+          # 如果 README 中包含相对路径的图片链接，这里可能需要额外处理，但目前只是文本和 md 链接
+          cp README.md docs/index.md
+
+      - name: Build and Deploy
+        run: mkdocs gh-deploy --force

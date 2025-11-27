@@ -1,0 +1,81 @@
+site_name: AI-Powered Display Handbook
+site_description: AI生成、人工校验的显示技术参数深度解析手册。
+site_author: AI-Powered Display Handbook Team
+repo_url: https://github.com/william-lynn/ai-powered-display-handbook
+repo_name: william-lynn/ai-powered-display-handbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+  - with-pdf:
+      author: AI Assistant
+      copyright: "CC BY-NC-SA 4.0"
+      cover: true
+      back_cover: true
+      output_path: ai-powered-display-handbook.pdf
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 项目介绍: intro.md
+  - 基础参数详解:
+      - 分辨率与像素密度: resolution.md
+      - 刷新率与响应时间: refresh-rate.md
+      - 亮度与对比度: brightness-contrast.md
+      - 可视角度: viewing-angles.md
+  - 色彩科学:
+      - 色域: color-gamut.md
+      - 色准: color-accuracy.md
+      - 色深: color-depth.md
+      - 色温与白点: color-temperature.md
+  - 面板技术解析:
+      - LCD 家族: lcd-types.md
+      - OLED 技术: oled.md
+      - Mini-LED: mini-led.md
+      - Micro-LED: micro-led.md
+  - HDR 与视觉增强:
+      - HDR 标准: hdr.md
+      - 局部调光: local-dimming.md
+      - VRR 可变刷新率: vrr.md
+  - 接口与连接:
+      - HDMI vs DP: interfaces.md
+      - USB-C 与 Thunderbolt: usb-c.md
+  - 护眼与健康:
+      - 低蓝光: blue-light.md
+      - 调光方式: dimming.md
+  - 选购指南:
+      - 办公与设计: guide-productivity.md
+      - 电竞与游戏: guide-gaming.md
+      - 常见误区: myths.md
