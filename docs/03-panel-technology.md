@@ -66,9 +66,9 @@ graph TD
     B -->|我全都要 / 我是设计师| E[IPS 面板]
     
     E --> F{IPS 细分}
-    F -->|极致竞技| G[Fast IPS (1ms)]
+    F -->|极致竞技| G["Fast IPS (1ms)"]
     F -->|鲜艳色彩| H[Nano IPS / QLED]
-    F -->|专业设计| I[IPS Black (2000:1)]
+    F -->|专业设计| I["IPS Black (2000:1)"]
 ```
 
 ---
