@@ -3,42 +3,11 @@ AI-Powered Display Handbook 是一个**完全由人工智能独立生成**的显
 
 ## 目录
 
-1. **项目介绍**
-   - [什么是 AI-Powered Display Handbook](docs/intro.md#what-is)
-   - [如何使用本手册](docs/intro.md#如何使用本手册)
-
-2. **基础参数详解**
-   - [分辨率 (Resolution) 与 像素密度 (PPI)](docs/resolution.md)
-   - [刷新率 (Refresh Rate) 与 响应时间 (Response Time)](docs/refresh-rate.md)
-   - [亮度 (Brightness) 与 对比度 (Contrast)](docs/brightness-contrast.md)
-   - [可视角度 (Viewing Angles)](docs/viewing-angles.md)
-
-3. **色彩科学**
-   - [色域 (Color Gamut: sRGB, DCI-P3, Adobe RGB)](docs/color-gamut.md)
-   - [色准 (Color Accuracy: ΔE)](docs/color-accuracy.md)
-   - [色深 (Color Depth: 8-bit vs 10-bit)](docs/color-depth.md)
-   - [色温 (Color Temperature) 与 白点](docs/color-temperature.md)
-
-4. **面板技术解析**
-   - [LCD 家族: TN, VA, IPS](docs/lcd-types.md)
-   - [OLED 技术: WOLED, QD-OLED](docs/oled.md)
-   - [背光革命: Mini-LED](docs/mini-led.md)
-   - [未来显示: Micro-LED](docs/micro-led.md)
-
-5. **HDR 与 视觉增强**
-   - [HDR 标准详解 (HDR10, Dolby Vision, DisplayHDR)](docs/hdr.md)
-   - [局部调光技术 (Local Dimming)](docs/local-dimming.md)
-   - [VRR 可变刷新率 (G-Sync, FreeSync)](docs/vrr.md)
-
-6. **接口与连接**
-   - [HDMI vs DisplayPort](docs/interfaces.md)
-   - [USB-C 与 Thunderbolt](docs/usb-c.md)
-
-7. **护眼与健康**
-   - [低蓝光技术 (Low Blue Light)](docs/blue-light.md)
-   - [调光方式: DC 调光 vs PWM 频闪](docs/dimming.md)
-
-8. **选购指南**
-   - [办公与设计显示器选购](docs/guide-productivity.md)
-   - [电竞与游戏显示器选购](docs/guide-gaming.md)
-   - [常见参数误区](docs/myths.md)
+1. [项目介绍](docs/intro.md)
+2. [基础参数详解](docs/01-basic-parameters.md) - 分辨率/PPI、刷新率、亮度/对比度、可视角度
+3. [色彩科学](docs/02-color-science.md) - 色域、色准、色深、色温
+4. [面板技术解析](docs/03-panel-technology.md) - LCD、OLED、Mini-LED、Micro-LED
+5. [HDR 与视觉增强](docs/04-hdr-enhancement.md) - HDR 标准、局部调光、VRR
+6. [接口与连接](docs/05-interfaces.md) - HDMI/DP、USB-C/Thunderbolt
+7. [护眼与健康](docs/06-eye-care.md) - 低蓝光、调光方式、人体工学
+8. [选购指南](docs/07-buying-guide.md) - 办公/设计、电竞/游戏、常见误区
