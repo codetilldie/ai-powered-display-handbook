@@ -18,3 +18,5 @@ AI-Powered Display Handbook 是一个**完全由人工智能独立生成**的显
    - **核心看点**：软硬防蓝光的区别、PWM 频闪的危害、国际通用 20-20-20 护眼法则。
 8. [选购指南](docs/07-buying-guide.md)
    - **核心看点**：针对 **Mac/Win 办公**、**FPS/3A 游戏**、**主机玩家** 的分众推荐，以及 5 大常见参数误区。
+9. [物理分辨率 vs 逻辑分辨率](docs/08-resolution-scaling.md)
+   - **核心看点**：Windows 与 macOS 缩放机制的本质区别、为什么 27寸 4K 在 Mac 上“尴尬”、PPI 与视网膜屏幕的关系。
