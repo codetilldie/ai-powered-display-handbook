@@ -1,0 +1,2376 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI生成、人工校验的显示技术参数深度解析手册。">
+      
+      
+        <meta name="author" content="AI-Powered Display Handbook Team">
+      
+      
+      
+        <link rel="prev" href="../intro/">
+      
+      
+        <link rel="next" href="../02-color-science/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>基础参数详解 - AI-Powered Display Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="AI-Powered Display Handbook" class="md-header__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI-Powered Display Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基础参数详解
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  项目介绍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  基础参数详解
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../02-color-science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  色彩科学
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../03-panel-technology/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  面板技术解析
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../04-hdr-enhancement/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HDR 与视觉增强
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../05-interfaces/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  接口与连接
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../06-eye-care/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  护眼与健康
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../07-buying-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  选购指南
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../08-resolution-scaling/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  物理分辨率 vs 逻辑分辨率
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  术语表
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../calibration-settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  校色与设置
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI-Powered Display Handbook" class="md-nav__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI-Powered Display Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    项目介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础参数详解
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础参数详解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resolution-ppi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 分辨率 (Resolution) 与 像素密度 (PPI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 分辨率 (Resolution) 与 像素密度 (PPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是分辨率?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是分辨率?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见分辨率规格表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是像素密度 (PPI)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是像素密度 (PPI)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPI 等级指南
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-hidpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        特别专题: macOS 用户的痛点 (HiDPI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="特别专题: macOS 用户的痛点 (HiDPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS 的渲染逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-4k-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 27寸 4K 在 Mac 上很尴尬?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mac 用户选购建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        非标准分辨率详解：超宽屏与带鱼屏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非标准分辨率详解：超宽屏与带鱼屏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见超宽屏规格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超宽屏的优劣
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最佳观看距离：科学计算公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最佳观看距离：科学计算公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实用观看距离表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分辨率与显卡性能：不可忽视的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-refresh-rate-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 刷新率 (Refresh Rate) 与 响应时间 (Response Time)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 刷新率 (Refresh Rate) 与 响应时间 (Response Time)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        刷新率 (Hz)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="刷新率 (Hz)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#60fps144hz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        帧率与刷新率：为什么60fps也要配144Hz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vrr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VRR 范围：一个被忽视的关键参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运动模糊减少技术 (MBR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应时间 (ms)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="响应时间 (ms)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gtg-vs-mprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心指标：GtG vs MPRT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        过冲与欠冲：追求速度的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应时间曲线：平均值的陷阱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实际测试方法：自己动手验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-brightness-contrast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 亮度 (Brightness) 与 对比度 (Contrast)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 亮度 (Brightness) 与 对比度 (Contrast)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        亮度 (nits)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度 (Contrast Ratio)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="对比度 (Contrast Ratio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶概念：局部对比度 vs 全屏对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        环境光与亮度的匹配：多少 nits 才够用？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-viewing-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 可视角度 (Viewing Angles)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-color-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色彩科学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-panel-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面板技术解析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-hdr-enhancement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HDR 与视觉增强
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    接口与连接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-eye-care/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    护眼与健康
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-buying-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    选购指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-resolution-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物理分辨率 vs 逻辑分辨率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    术语表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校色与设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-resolution-ppi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 分辨率 (Resolution) 与 像素密度 (PPI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 分辨率 (Resolution) 与 像素密度 (PPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是分辨率?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是分辨率?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见分辨率规格表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是像素密度 (PPI)?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="什么是像素密度 (PPI)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPI 等级指南
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-hidpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        特别专题: macOS 用户的痛点 (HiDPI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="特别专题: macOS 用户的痛点 (HiDPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS 的渲染逻辑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-4k-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 27寸 4K 在 Mac 上很尴尬?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mac 用户选购建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        非标准分辨率详解：超宽屏与带鱼屏
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="非标准分辨率详解：超宽屏与带鱼屏">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见超宽屏规格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超宽屏的优劣
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最佳观看距离：科学计算公式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最佳观看距离：科学计算公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实用观看距离表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分辨率与显卡性能：不可忽视的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-refresh-rate-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 刷新率 (Refresh Rate) 与 响应时间 (Response Time)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 刷新率 (Refresh Rate) 与 响应时间 (Response Time)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        刷新率 (Hz)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="刷新率 (Hz)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#60fps144hz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        帧率与刷新率：为什么60fps也要配144Hz?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vrr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VRR 范围：一个被忽视的关键参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运动模糊减少技术 (MBR)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应时间 (ms)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="响应时间 (ms)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gtg-vs-mprt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心指标：GtG vs MPRT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        过冲与欠冲：追求速度的代价
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        响应时间曲线：平均值的陷阱
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实际测试方法：自己动手验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-brightness-contrast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 亮度 (Brightness) 与 对比度 (Contrast)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 亮度 (Brightness) 与 对比度 (Contrast)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        亮度 (nits)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        对比度 (Contrast Ratio)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="对比度 (Contrast Ratio)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶概念：局部对比度 vs 全屏对比度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        环境光与亮度的匹配：多少 nits 才够用？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-viewing-angles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 可视角度 (Viewing Angles)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">基础参数详解<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>显示器的参数表往往写满了各种数字和单位，让人眼花缭乱。但在这些枯燥的数据背后，只有四个核心参数真正决定了你的第一眼观感：<strong>分辨率、刷新率、亮度与对比度、可视角度</strong>。</p>
+<p>本章将带你剥开营销术语的外衣，看懂这些最基础也最重要的指标。</p>
+<hr />
+<h2 id="1-resolution-ppi">1. 分辨率 (Resolution) 与 像素密度 (PPI)<a class="headerlink" href="#1-resolution-ppi" title="Permanent link">&para;</a></h2>
+<p>分辨率决定了画面的<strong>细腻程度</strong>和<strong>工作空间</strong>的大小。</p>
+<div class="admonition info">
+<p class="admonition-title">🔍 深度阅读</p>
+<p>想了解物理分辨率、逻辑分辨率以及 Windows/macOS 缩放机制的详细区别？请移步 <a href="../08-resolution-scaling/">第八章：物理分辨率 vs 逻辑分辨率</a>。</p>
+</div>
+<h3 id="_2">什么是分辨率?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>分辨率是指屏幕上像素点的总数，通常以“水平像素 × 垂直像素”表示。想象一下十字绣，格子越多，绣出来的图案就越精细。</p>
+<h4 id="_3">常见分辨率规格表<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">简称</th>
+<th style="text-align: left;">全称</th>
+<th style="text-align: left;">像素 (水平×垂直)</th>
+<th style="text-align: left;">像素总量</th>
+<th style="text-align: left;">典型应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1080p / FHD</strong></td>
+<td style="text-align: left;">Full HD</td>
+<td style="text-align: left;">1920 × 1080</td>
+<td style="text-align: left;">~200万</td>
+<td style="text-align: left;">办公、普通网游、入门级显示器</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2K / QHD</strong></td>
+<td style="text-align: left;">Quad HD</td>
+<td style="text-align: left;">2560 × 1440</td>
+<td style="text-align: left;">~370万</td>
+<td style="text-align: left;"><strong>当前主流</strong>。进阶办公、3A游戏甜点级选择</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4K / UHD</strong></td>
+<td style="text-align: left;">Ultra HD</td>
+<td style="text-align: left;">3840 × 2160</td>
+<td style="text-align: left;">~830万</td>
+<td style="text-align: left;">专业设计、影视后期、高端影音娱乐</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5K</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">5120 × 2880</td>
+<td style="text-align: left;">~1470万</td>
+<td style="text-align: left;">Mac 生态标准、专业平面设计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>8K</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">7680 × 4320</td>
+<td style="text-align: left;">~3300万</td>
+<td style="text-align: left;">顶尖专业领域、极少数发烧友</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">💡 小贴士</p>
+<p>带鱼屏 (UltraWide) 的分辨率是标准比例的横向延伸。例如 3440 × 1440 (WQHD) 本质上就是“拉长版”的 2K 屏幕。</p>
+</div>
+<h3 id="ppi">什么是像素密度 (PPI)?<a class="headerlink" href="#ppi" title="Permanent link">&para;</a></h3>
+<p>仅看分辨率是不够的，因为屏幕尺寸会稀释像素的密度。<strong>PPI (Pixels Per Inch)</strong> 表示每英寸屏幕拥有的像素数量，它才是决定“清晰度”的终极指标。</p>
+<ul>
+<li><strong>计算公式</strong>: $$ PPI = \frac{\sqrt{水平像素^2 + 垂直像素^2}}{屏幕尺寸(英寸)} $$</li>
+</ul>
+<h4 id="ppi_1">PPI 等级指南<a class="headerlink" href="#ppi_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>~90 PPI (普通)</strong>：如 24寸 1080p。凑近看能看到像素点，字体边缘有轻微锯齿。</li>
+<li><strong>~110 PPI (清晰)</strong>：如 27寸 2K。Windows 系统的黄金密度，无需缩放即可获得清晰且大小适中的文字。</li>
+<li><strong>&gt;160 PPI (细腻)</strong>：如 27寸 4K。必须开启系统缩放 (150% 或 200%)。文字如印刷品般锐利。</li>
+<li><strong>&gt;200 PPI (视网膜)</strong>：如 24寸 4K, 27寸 5K。在正常距离下，人眼彻底无法分辨像素点。</li>
+</ul>
+<h3 id="macos-hidpi">特别专题: macOS 用户的痛点 (HiDPI)<a class="headerlink" href="#macos-hidpi" title="Permanent link">&para;</a></h3>
+<p>Mac 用户在选购非 Apple 官方显示器时经常感到困惑，这源于 macOS 独特的 <strong>HiDPI (Retina)</strong> 渲染机制。</p>
+<h4 id="macos">macOS 的渲染逻辑<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h4>
+<p>macOS 并不是简单地放大字体，而是<strong>渲染 4 倍的像素</strong>然后缩小输出。为了获得完美的“视网膜”体验，macOS 期望屏幕的 PPI 在 <strong>110 (非 Retina)</strong> 或 <strong>220 (Retina)</strong> 附近。</p>
+<h4 id="27-4k-mac">为什么 27寸 4K 在 Mac 上很尴尬?<a class="headerlink" href="#27-4k-mac" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>27寸 5K (PPI 218)</strong>：<strong>完美</strong>。200% 缩放后，逻辑分辨率为 2560x1440。UI 大小适中，且点对点显示，极度清晰。</li>
+<li><strong>27寸 4K (PPI 163)</strong>：<strong>尴尬</strong>。<ul>
+<li><strong>开启 200% 缩放</strong>：逻辑分辨率变为 1920x1080。UI 元素变得巨大，屏幕可用空间像 1080p 一样小。</li>
+<li><strong>开启“默认”缩放 (模拟 2K)</strong>：系统会先渲染一张 <strong>5K</strong> 的超大画面，然后强行压缩到 4K 屏幕上显示。<ul>
+<li><strong>后果</strong>：虽然 UI 大小合适了，但因为是非整数倍缩放，会占用额外的 GPU 算力，且理论上字体边缘不如点对点锐利（虽然在 4K 下肉眼很难察觉）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="mac">Mac 用户选购建议<a class="headerlink" href="#mac" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>追求完美</strong>：咬牙上 <strong>27寸 5K</strong> (Studio Display, LG UltraFine) 或 <strong>24寸 4K</strong>。</li>
+<li><strong>主流妥协</strong>：买 <strong>27寸 4K</strong>。虽然有轻微的 GPU 损耗，但 M1/M2/M3 芯片完全带得动，且画质远好于 2K 屏。</li>
+<li><strong>绝对避坑</strong>：<strong>27寸 2K</strong>。PPI 太低导致 macOS 无法开启 HiDPI，字体会发虚、发糊，观感极差。</li>
+</ol>
+<h3 id="_4">非标准分辨率详解：超宽屏与带鱼屏<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>除了传统的 16:9 屏幕，近年来 <strong>21:9 (UltraWide)</strong> 和 <strong>32:9 (Super UltraWide)</strong> 超宽屏越来越受欢迎。</p>
+<h4 id="_5">常见超宽屏规格<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">比例</th>
+<th style="text-align: left;">分辨率</th>
+<th style="text-align: left;">等效关系</th>
+<th style="text-align: left;">典型尺寸</th>
+<th style="text-align: left;">PPI (34寸)</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>21:9</strong></td>
+<td style="text-align: left;">2560 × 1080</td>
+<td style="text-align: left;">"拉宽的 1080p"</td>
+<td style="text-align: left;">29\" - 34\"</td>
+<td style="text-align: left;">~81</td>
+<td style="text-align: left;">入门影音、多任务办公</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>21:9</strong></td>
+<td style="text-align: left;">3440 × 1440</td>
+<td style="text-align: left;">"拉宽的 2K"</td>
+<td style="text-align: left;">34\" - 38\"</td>
+<td style="text-align: left;"><strong>~109</strong></td>
+<td style="text-align: left;"><strong>主流甜点</strong>。视频剪辑、股票交易、代码并排</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>21:9</strong></td>
+<td style="text-align: left;">3840 × 1600</td>
+<td style="text-align: left;">介于 2K 与 4K 之间</td>
+<td style="text-align: left;">38\"</td>
+<td style="text-align: left;">~111</td>
+<td style="text-align: left;">高端生产力</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>32:9</strong></td>
+<td style="text-align: left;">5120 × 1440</td>
+<td style="text-align: left;">"两台 2K 横向拼接"</td>
+<td style="text-align: left;">49\"</td>
+<td style="text-align: left;">~108</td>
+<td style="text-align: left;">模拟驾驶、金融多屏、极致多任务</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">💡 PPI 参考</p>
+<p>对于超宽屏，<strong>34寸 3440×1440</strong> 的 PPI 约为 109，与 27寸 2K (109 PPI) 相当，是最舒适的密度。</p>
+</div>
+<h4 id="_6">超宽屏的优劣<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p><strong>优势</strong>：
+- <strong>沉浸感</strong>：21:9 接近电影画幅 (2.39:1)，看电影没有黑边。
+- <strong>多任务</strong>：可以并排放三个窗口，无需频繁切换。
+- <strong>游戏视野</strong>：在支持的游戏中能看到更广的左右视野（如赛车、飞行模拟）。</p>
+<p><strong>劣势</strong>：
+- <strong>内容兼容性</strong>：看 16:9 视频会有黑边；部分老游戏不支持 21:9，画面会被拉伸变形。
+- <strong>桌面深度</strong>：49寸 32:9 屏幕宽度超过 120cm，需要足够深的桌面才能保证合理观看距离。</p>
+<h3 id="_7">最佳观看距离：科学计算公式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>坐得太近眼睛累，坐得太远看不清。<strong>最佳观看距离</strong>取决于分辨率和 PPI。</p>
+<h4 id="_8">公式推导<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>人眼的分辨极限约为 <strong>1 角分 (arcminute)</strong>。这意味着：
+- <strong>最近距离（看不到像素点）</strong>: $$ 距离 = \frac{屏幕尺寸 \times 2.54}{PPI \times 0.0003} \approx \frac{屏幕尺寸}{PPI} \times 3438 \ (mm) $$</p>
+<pre class="mermaid"><code>graph LR
+    A[屏幕尺寸 &amp; 分辨率] --&gt; B(计算 PPI)
+    B --&gt; C{PPI 等级}
+    C --&gt;|~90 PPI| D[推荐距离 60-70cm]
+    C --&gt;|~110 PPI| E[推荐距离 70-80cm]
+    C --&gt;|~160 PPI| F[推荐距离 60-70cm]
+    C --&gt;|&gt;200 PPI| G[视网膜级 任意距离]</code></pre>
+<p>但实际使用时，我们并不需要完全贴到"视网膜距离"。以下是实用建议：</p>
+<h4 id="_9">实用观看距离表<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">屏幕尺寸</th>
+<th style="text-align: left;">分辨率</th>
+<th style="text-align: left;">PPI</th>
+<th style="text-align: left;">推荐距离 (舒适)</th>
+<th style="text-align: left;">最近距离 (无颗粒感)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">24\"</td>
+<td style="text-align: left;">1080p</td>
+<td style="text-align: left;">92</td>
+<td style="text-align: left;"><strong>60-70 cm</strong></td>
+<td style="text-align: left;">50 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">27\"</td>
+<td style="text-align: left;">2K</td>
+<td style="text-align: left;">109</td>
+<td style="text-align: left;"><strong>70-80 cm</strong></td>
+<td style="text-align: left;">60 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">27\"</td>
+<td style="text-align: left;">4K</td>
+<td style="text-align: left;">163</td>
+<td style="text-align: left;"><strong>60-70 cm</strong></td>
+<td style="text-align: left;">40 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">34\"</td>
+<td style="text-align: left;">3440×1440</td>
+<td style="text-align: left;">109</td>
+<td style="text-align: left;"><strong>80-90 cm</strong></td>
+<td style="text-align: left;">65 cm</td>
+</tr>
+<tr>
+<td style="text-align: left;">32\"</td>
+<td style="text-align: left;">4K</td>
+<td style="text-align: left;">138</td>
+<td style="text-align: left;"><strong>70-80 cm</strong></td>
+<td style="text-align: left;">50 cm</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition success">
+<p class="admonition-title">📏 快速检验法</p>
+<p>伸直手臂，手掌刚好能完全遮住屏幕，这个距离通常就是舒适距离（约 50-70cm）。</p>
+</div>
+<h3 id="_10">分辨率与显卡性能：不可忽视的关系<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>高分辨率意味着更高的性能要求。以下是游戏场景下，不同分辨率对显卡的压力对比：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分辨率</th>
+<th style="text-align: left;">像素总量</th>
+<th style="text-align: left;">相对性能需求</th>
+<th style="text-align: left;">推荐显卡等级 (2024)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1080p</strong></td>
+<td style="text-align: left;">207万</td>
+<td style="text-align: left;"><strong>基准 (1x)</strong></td>
+<td style="text-align: left;">GTX 1660 / RX 6500 XT</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2K</strong></td>
+<td style="text-align: left;">368万</td>
+<td style="text-align: left;"><strong>1.8x</strong></td>
+<td style="text-align: left;">RTX 4060 / RX 7600</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3440×1440 (21:9)</strong></td>
+<td style="text-align: left;">497万</td>
+<td style="text-align: left;"><strong>2.4x</strong></td>
+<td style="text-align: left;">RTX 4060 Ti / RX 7700 XT</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4K</strong></td>
+<td style="text-align: left;">829万</td>
+<td style="text-align: left;"><strong>4x</strong></td>
+<td style="text-align: left;">RTX 4070 Super / RX 7900 XT</td>
+</tr>
+</tbody>
+</table>
+<p><strong>启示</strong>：如果你的显卡只是中端水平，不要盲目追求 4K。在 2K 下开高画质，体验远好于 4K 低画质。</p>
+<hr />
+<h2 id="2-refresh-rate-response-time">2. 刷新率 (Refresh Rate) 与 响应时间 (Response Time)<a class="headerlink" href="#2-refresh-rate-response-time" title="Permanent link">&para;</a></h2>
+<p>这两个参数决定了动态画面的<strong>流畅度</strong>和<strong>清晰度</strong>。</p>
+<h3 id="hz">刷新率 (Hz)<a class="headerlink" href="#hz" title="Permanent link">&para;</a></h3>
+<p>刷新率就是屏幕每秒钟“翻页”的次数。</p>
+<ul>
+<li><strong>60Hz (标准)</strong>：每秒翻 60 页。适合办公、看电影（电影通常只有 24 帧）。</li>
+<li><strong>120Hz / 144Hz (高刷)</strong>：每秒翻 144 页。鼠标移动如丝般顺滑，窗口拖动没有残影。一旦用过就很难回得去。</li>
+<li><strong>240Hz+ (电竞)</strong>：专为 FPS 职业玩家设计。对于普通人来说，从 60Hz 到 144Hz 是质变，从 144Hz 到 240Hz 只是量变。</li>
+</ul>
+<h4 id="60fps144hz">帧率与刷新率：为什么60fps也要配144Hz?<a class="headerlink" href="#60fps144hz" title="Permanent link">&para;</a></h4>
+<p>很多人误以为"游戏只有60帧,144Hz就没用了"。这是错误的。</p>
+<p><strong>真相</strong>：即使游戏帧率在60-90fps波动，144Hz 显示器依然能带来更流畅的体验。原因在于：</p>
+<ol>
+<li><strong>减少输入延迟</strong>：144Hz 意味着每帧显示时间是 6.9ms，而 60Hz 是 16.7ms。即使帧率相同，高刷新率也能更快地把新画面呈现给你的眼睛。</li>
+<li><strong>VRR 的价值</strong>：开启 G-Sync/FreeSync 后，显示器会实时匹配显卡帧率（如 73fps 就用 73Hz）。如果你的显示器只有 60Hz，那 73fps 会被强行压到 60fps，浪费了性能。</li>
+</ol>
+<p><strong>日常办公场景下的高刷价值</strong>：
+- 滚动网页时文字依然清晰可辨（60Hz 下文字会糊成一片）
+- 拖动窗口丝般顺滑，没有"卡顿感"
+- 鼠标指针移动轨迹连贯，定位更精准</p>
+<div class="admonition quote">
+<p class="admonition-title">💡 建议</p>
+<p>2024年后，<strong>144Hz 应该是所有新购显示器的起步标准</strong>，无论你玩不玩游戏。</p>
+</div>
+<h4 id="vrr">VRR 范围：一个被忽视的关键参数<a class="headerlink" href="#vrr" title="Permanent link">&para;</a></h4>
+<p>支持 VRR (可变刷新率) 的显示器会标注一个<strong>可变范围</strong>，例如 "48-144Hz" 或 "30-165Hz"。</p>
+<p><strong>为什么下限很重要？</strong></p>
+<ul>
+<li><strong>48-144Hz</strong>：当游戏帧率低于 48fps 时，VRR 失效，可能出现撕裂或卡顿。</li>
+<li><strong>30-144Hz</strong>：即使帧率掉到 35fps，VRR 依然生效，保持流畅。</li>
+</ul>
+<p><strong>LFC (低帧率补偿)</strong>：部分高端显示器支持 LFC 技术。当帧率低于下限时（如 40fps），显示器会自动倍频到 80Hz，欺骗眼睛保持流畅。</p>
+<div class="admonition check">
+<p class="admonition-title">选购建议</p>
+<p>认准 <strong>FreeSync Premium</strong> 或明确支持 LFC 的型号。</p>
+</div>
+<h4 id="mbr">运动模糊减少技术 (MBR)<a class="headerlink" href="#mbr" title="Permanent link">&para;</a></h4>
+<p>高刷新率解决了"翻页速度"，但人眼的<strong>视觉暂留</strong>依然会产生运动模糊。厂商开发了多种技术来减少这种模糊：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">技术名称</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">原理</th>
+<th style="text-align: left;">效果</th>
+<th style="text-align: left;">副作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ULMB</strong></td>
+<td style="text-align: left;">NVIDIA (通用)</td>
+<td style="text-align: left;">插入黑帧</td>
+<td style="text-align: left;">动态画面极度清晰</td>
+<td style="text-align: left;">亮度降低 50%，不能同时开 G-Sync</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DyAc / DyAc+</strong></td>
+<td style="text-align: left;">BenQ (ZOWIE)</td>
+<td style="text-align: left;">背光频闪</td>
+<td style="text-align: left;">准星极稳，适合 FPS</td>
+<td style="text-align: left;">亮度降低，有轻微频闪感</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ELMB-Sync</strong></td>
+<td style="text-align: left;">ASUS (高端)</td>
+<td style="text-align: left;">黑帧 + VRR 同时开启</td>
+<td style="text-align: left;">两全其美</td>
+<td style="text-align: left;">仅旗舰型号支持，价格高</td>
+</tr>
+</tbody>
+</table>
+<p><strong>选择建议</strong>：
+- <strong>职业 FPS 玩家</strong>：DyAc 技术几乎是必选（如 ZOWIE XL 系列）。
+- <strong>普通玩家</strong>：不必纠结，开启 VRR 即可，MBR 技术的亮度损失往往得不偿失。</p>
+<h3 id="ms">响应时间 (ms)<a class="headerlink" href="#ms" title="Permanent link">&para;</a></h3>
+<p>响应时间是指像素点“变色”需要多久。如果变色太慢，上一帧的颜色还没褪去，下一帧就来了，就会形成<strong>拖影 (Ghosting)</strong>。</p>
+<h4 id="gtg-vs-mprt">核心指标：GtG vs MPRT<a class="headerlink" href="#gtg-vs-mprt" title="Permanent link">&para;</a></h4>
+<p>厂商在宣传时经常玩文字游戏，务必分清这两个概念：</p>
+<ol>
+<li>
+<p><strong>GtG (灰阶到灰阶)</strong>：<strong>真实指标</strong>。</p>
+<ul>
+<li>指像素从一个灰色级变到另一个灰色级的时间。</li>
+<li><strong>Fast IPS</strong> 面板通常能做到 <strong>1ms (GtG)</strong>，这是非常优秀的成绩。</li>
+<li><strong>OLED</strong> 面板能做到 <strong>0.03ms (GtG)</strong>，这是这一指标的物理极限。</li>
+</ul>
+</li>
+<li>
+<p><strong>MPRT (动态画面响应时间)</strong>：<strong>营销指标</strong>。</p>
+<ul>
+<li>通过"插黑帧"或背光频闪来欺骗人眼，减少视觉残留。</li>
+<li><strong>副作用</strong>：开启 MPRT 模式后，屏幕亮度会大幅下降，且通常无法同时开启 G-Sync/FreeSync，甚至会导致频闪护眼失效。</li>
+<li><strong>建议</strong>：选购时只看 GtG 数据，忽略 MPRT。</li>
+</ul>
+</li>
+</ol>
+<h4 id="_11">过冲与欠冲：追求速度的代价<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>为了让液晶分子更快地变色，厂商会"过度驱动"电压（Overdrive），但这会带来副作用：</p>
+<ul>
+<li><strong>过冲 (Overshoot)</strong>：电压给太猛，像素颜色"冲过头"了，然后再回落。表现为移动物体后方出现<strong>反色鬼影</strong>（如黑色背景上白色物体后面有一条黑色拖尾）。</li>
+<li><strong>欠冲 (Undershoot)</strong>：电压给不够，像素变色不到位。表现为画面发灰、对比度降低。</li>
+</ul>
+<p><strong>选购建议</strong>：
+- 查看专业评测中的 <strong>Overdrive 档位对比</strong>。优秀的显示器在"中档"Overdrive 下就能做到 &lt;5ms GtG 且几乎无过冲。
+- 避免将 Overdrive 开到最高档（如"Extreme"），过冲往往会变得不可接受。</p>
+<h4 id="_12">响应时间曲线：平均值的陷阱<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>厂商宣传的"1ms GtG"通常是<strong>最快场景</strong>的响应时间（如从 50% 灰跳到 80% 灰）。但不同灰阶之间的响应时间差异巨大：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">灰阶转换</th>
+<th style="text-align: left;">典型响应时间 (Fast IPS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">亮 → 亮 (80% → 50%)</td>
+<td style="text-align: left;"><strong>&lt;2ms</strong> ✅</td>
+</tr>
+<tr>
+<td style="text-align: left;">亮 → 暗 (80% → 10%)</td>
+<td style="text-align: left;"><strong>5-10ms</strong> ⚠️</td>
+</tr>
+<tr>
+<td style="text-align: left;">暗 → 暗 (10% → 30%)</td>
+<td style="text-align: left;"><strong>10-20ms</strong> ❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为什么"暗→暗"最慢？</strong>
+液晶分子从完全躺平到微微扭转需要最多的时间。这也是为什么 VA 面板在暗场景下容易出现"黑抹布"拖影。</p>
+<p><strong>实际影响</strong>：
+在恐怖游戏或黑暗场景的 3A 大作中，如果响应时间曲线不平坦，阴影处的敌人移动会模糊不清。</p>
+<h4 id="_13">实际测试方法：自己动手验证<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p>不要完全相信厂商数据。以下是简单的自测方法：</p>
+<ol>
+<li>
+<p><strong>UFO Test (在线工具)</strong>：</p>
+<ul>
+<li>访问 <a href="https://www.testufo.com/">testufo.com</a></li>
+<li>查看"Ghosting Test"：UFO 飞行时，尾部应该干净利落，没有残影。</li>
+<li>如果能看到 2-3 个半透明的 UFO 叠在一起，说明响应时间过慢。</li>
+</ul>
+</li>
+<li>
+<p><strong>摄像法</strong>：</p>
+<ul>
+<li>用手机相机（快门 1/1000s）拍摄移动的白色方块。</li>
+<li>如果照片中方块边缘拖着长长的尾巴，说明拖影严重。</li>
+</ul>
+</li>
+<li>
+<p><strong>实战测试</strong>：</p>
+<ul>
+<li>玩快节奏 FPS（如 CS2），快速甩枪时观察画面是否清晰。</li>
+<li>在暗场景下移动镜头，观察墙角是否有"抹布感"。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="3-brightness-contrast">3. 亮度 (Brightness) 与 对比度 (Contrast)<a class="headerlink" href="#3-brightness-contrast" title="Permanent link">&para;</a></h2>
+<p>这两个参数决定了画面的<strong>通透感</strong>和<strong>立体感</strong>。</p>
+<h3 id="nits">亮度 (nits)<a class="headerlink" href="#nits" title="Permanent link">&para;</a></h3>
+<p>亮度决定了你在明亮环境中能不能看清屏幕，以及 HDR 画面够不够震撼。</p>
+<ul>
+<li><strong>300 nits</strong>：及格线。适合一般室内办公。</li>
+<li><strong>400 - 600 nits</strong>：优秀。在阳光充足的房间也能清晰显示。</li>
+<li><strong>1000 nits+</strong>：<strong>HDR 的门槛</strong>。只有达到这个亮度，才能还原真实的阳光刺眼感和爆炸的火光。</li>
+</ul>
+<h3 id="contrast-ratio">对比度 (Contrast Ratio)<a class="headerlink" href="#contrast-ratio" title="Permanent link">&para;</a></h3>
+<p>对比度 = 最亮白色 / 最暗黑色。对比度越高，黑色越深邃，画面越有层次。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">面板类型</th>
+<th style="text-align: left;">典型静态对比度</th>
+<th style="text-align: left;">黑色表现</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>IPS</strong></td>
+<td style="text-align: left;">1000:1</td>
+<td style="text-align: left;">像深灰色，暗室看有“辉光”</td>
+<td style="text-align: left;">办公、设计、普通游戏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>IPS Black</strong></td>
+<td style="text-align: left;">2000:1</td>
+<td style="text-align: left;">明显改善，接近深黑</td>
+<td style="text-align: left;">高端设计、办公</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>VA</strong></td>
+<td style="text-align: left;">3000:1 - 4000:1</td>
+<td style="text-align: left;">很黑，暗部细节好</td>
+<td style="text-align: left;">观影、3A 大作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OLED</strong></td>
+<td style="text-align: left;"><strong>无限大 (∞:1)</strong></td>
+<td style="text-align: left;"><strong>纯黑</strong> (像素不发光)</td>
+<td style="text-align: left;">极致影音娱乐</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">⚠️ 警惕动态对比度</p>
+<p>包装盒上写的“几千万:1”通常是动态对比度，没有任何参考价值，请直接忽略。</p>
+</div>
+<h4 id="vs">进阶概念：局部对比度 vs 全屏对比度<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h4>
+<p>厂商标称的 1000:1 通常是<strong>全屏对比度</strong>（全白画面亮度 / 全黑画面亮度）。但在实际观看中，<strong>ANSI 对比度</strong>（棋盘格测试）更具参考价值。</p>
+<ul>
+<li><strong>ANSI 对比度</strong>：屏幕同时显示黑白格。如果屏幕抗光性差或内部反光严重，白色格子的光会“污染”黑色格子，导致实际观感对比度下降。</li>
+<li><strong>局部对比度</strong>：这是 Mini-LED 和 OLED 的强项。在星空等场景下，星星极亮，背景极暗。普通 IPS 屏幕因为背光无法分区，星星周围会发灰，局部对比度极低。</li>
+</ul>
+<h4 id="nits_1">环境光与亮度的匹配：多少 nits 才够用？<a class="headerlink" href="#nits_1" title="Permanent link">&para;</a></h4>
+<p>屏幕亮度并非越亮越好，而是要与环境光匹配。过亮会刺眼，过暗会费眼。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">使用环境</th>
+<th style="text-align: left;">典型照度 (Lux)</th>
+<th style="text-align: left;">推荐屏幕亮度 (nits)</th>
+<th style="text-align: left;">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>深夜关灯</strong></td>
+<td style="text-align: left;">0 - 10</td>
+<td style="text-align: left;"><strong>80 - 120</strong></td>
+<td style="text-align: left;">必须调暗，否则像直视手电筒</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>温馨书房</strong></td>
+<td style="text-align: left;">100 - 300</td>
+<td style="text-align: left;"><strong>150 - 250</strong></td>
+<td style="text-align: left;">舒适区间</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>明亮办公室</strong></td>
+<td style="text-align: left;">400 - 600</td>
+<td style="text-align: left;"><strong>300 - 400</strong></td>
+<td style="text-align: left;">需要足够亮度对抗反光</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>靠窗/阳光直射</strong></td>
+<td style="text-align: left;">&gt; 1000</td>
+<td style="text-align: left;"><strong>500+</strong></td>
+<td style="text-align: left;">普通显示器可能看不清</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">💡 自动亮度</p>
+<p>如果你的显示器支持“光感自动调节”（如 BenQ B.I.+ 或 Apple Studio Display），强烈建议开启，它能像手机一样随环境光自动调节亮度。</p>
+</div>
+<hr />
+<h2 id="4-viewing-angles">4. 可视角度 (Viewing Angles)<a class="headerlink" href="#4-viewing-angles" title="Permanent link">&para;</a></h2>
+<p>可视角度决定了你是否必须正襟危坐地盯着屏幕中心。</p>
+<ul>
+<li><strong>IPS / OLED</strong>：<strong>178° 无死角</strong>。无论你葛优躺还是侧着身，或者几个人围着屏幕讨论，色彩和亮度都基本不变。</li>
+<li><strong>VA</strong>：<strong>一般</strong>。偏离中心观看时，画面会微微泛白（Gamma Shift）。这就是为什么大尺寸 VA 屏通常做成<strong>曲面</strong>，是为了让屏幕边缘正对着你的眼睛。</li>
+<li><strong>TN</strong>：<strong>差</strong>。稍微偏一点头，颜色就变了，甚至出现反色（像底片一样）。只适合独自一人正对屏幕使用。</li>
+</ul>
+<hr />
+<h2 id="_14">本章小结<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>分辨率</strong>：27寸 2K 是目前的黄金甜点；Mac 用户请优先考虑 4K/5K。</li>
+<li><strong>刷新率</strong>：144Hz 对日常体验提升巨大，不玩游戏也值得拥有。</li>
+<li><strong>响应时间</strong>：认准 <strong>GtG</strong>，忽略 MPRT。</li>
+<li><strong>对比度</strong>：影音爱好者首选 OLED 或 VA，办公设计首选 IPS。</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

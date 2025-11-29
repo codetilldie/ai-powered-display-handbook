@@ -1,0 +1,1766 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI生成、人工校验的显示技术参数深度解析手册。">
+      
+      
+        <meta name="author" content="AI-Powered Display Handbook Team">
+      
+      
+      
+        <link rel="prev" href="../01-basic-parameters/">
+      
+      
+        <link rel="next" href="../03-panel-technology/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>色彩科学 - AI-Powered Display Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="AI-Powered Display Handbook" class="md-header__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI-Powered Display Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              色彩科学
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  项目介绍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01-basic-parameters/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  基础参数详解
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  色彩科学
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../03-panel-technology/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  面板技术解析
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../04-hdr-enhancement/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HDR 与视觉增强
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../05-interfaces/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  接口与连接
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../06-eye-care/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  护眼与健康
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../07-buying-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  选购指南
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../08-resolution-scaling/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  物理分辨率 vs 逻辑分辨率
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  术语表
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../calibration-settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  校色与设置
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI-Powered Display Handbook" class="md-nav__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI-Powered Display Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    项目介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-basic-parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础参数详解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色彩科学
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色彩科学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-color-gamut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 色域 (Color Gamut)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 色域 (Color Gamut)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见色域标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-vs-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键概念：容积 (Volume) vs 覆盖率 (Coverage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamut-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色域转换与映射 (Gamut Mapping)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rec2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        面向未来的标准：Rec.2020
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        选购建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-accuracy-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 色准 (Color Accuracy: ΔE)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 色准 (Color Accuracy: ΔE)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-delta-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΔE (Delta E) 的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        避坑指南：平均值 vs 最大值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶知识：ΔE 的版本差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        灰阶平衡与 Gamma 曲线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于“出厂校色”与“后期校色”
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-color-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 色深 (Color Depth)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 色深 (Color Depth)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-bit-vs-10-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-bit vs 10-bit：楼梯与坡道
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-bit-vs-810-frc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原生 10-bit vs 8抖10 (FRC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么会出现色彩断层 (Banding)？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 色彩管理系统 (CMS)：被忽视的幕后英雄
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 色彩管理系统 (CMS)：被忽视的幕后英雄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 ICC 配置文件？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-vs-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows vs macOS：天壤之别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-color-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 色温 (Color Temperature)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 色温 (Color Temperature)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6500k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 6500K 看起来像黄色？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uniformity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        屏幕均匀度 (Uniformity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 小白自测：你的屏幕颜色准吗？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-panel-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面板技术解析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-hdr-enhancement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HDR 与视觉增强
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    接口与连接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-eye-care/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    护眼与健康
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-buying-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    选购指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-resolution-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物理分辨率 vs 逻辑分辨率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    术语表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校色与设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-color-gamut" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 色域 (Color Gamut)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 色域 (Color Gamut)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见色域标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume-vs-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键概念：容积 (Volume) vs 覆盖率 (Coverage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamut-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        色域转换与映射 (Gamut Mapping)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rec2020" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        面向未来的标准：Rec.2020
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        选购建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-color-accuracy-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 色准 (Color Accuracy: ΔE)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 色准 (Color Accuracy: ΔE)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-delta-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΔE (Delta E) 的含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        避坑指南：平均值 vs 最大值
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶知识：ΔE 的版本差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gamma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        灰阶平衡与 Gamma 曲线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于“出厂校色”与“后期校色”
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-color-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 色深 (Color Depth)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 色深 (Color Depth)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-bit-vs-10-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-bit vs 10-bit：楼梯与坡道
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-bit-vs-810-frc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原生 10-bit vs 8抖10 (FRC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么会出现色彩断层 (Banding)？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 色彩管理系统 (CMS)：被忽视的幕后英雄
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 色彩管理系统 (CMS)：被忽视的幕后英雄">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 ICC 配置文件？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-vs-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows vs macOS：天壤之别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-color-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 色温 (Color Temperature)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 色温 (Color Temperature)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6500k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 6500K 看起来像黄色？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uniformity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        屏幕均匀度 (Uniformity)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 小白自测：你的屏幕颜色准吗？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">色彩科学<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>如果说分辨率决定了画面的“骨架”，那么色彩就是画面的“灵魂”。</p>
+<p>色彩科学是显示器领域最深奥、也最容易被误解的部分。为什么同样的照片在两台显示器上看起来截然不同？为什么 100% sRGB 才是互联网的标准？本章将带你深入了解决定色彩表现的四大支柱：<strong>色域、色准、色深与色温</strong>。</p>
+<hr />
+<h2 id="1-color-gamut">1. 色域 (Color Gamut)<a class="headerlink" href="#1-color-gamut" title="Permanent link">&para;</a></h2>
+<p>色域是指显示器能显示出的<strong>颜色范围</strong>。想象一下画家手中的调色盘，色域越广，调色盘上的颜料种类就越丰富，能画出的色彩就越鲜艳。</p>
+<h3 id="_2">常见色域标准<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">标准</th>
+<th style="text-align: left;">全称</th>
+<th style="text-align: left;">覆盖范围</th>
+<th style="text-align: left;">核心地位</th>
+<th style="text-align: left;">典型应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>sRGB</strong></td>
+<td style="text-align: left;">Standard RGB</td>
+<td style="text-align: left;">~35% 人眼可见色</td>
+<td style="text-align: left;"><strong>互联网绝对标准</strong></td>
+<td style="text-align: left;">Windows 系统、网页浏览、普通办公、非 HDR 游戏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DCI-P3</strong></td>
+<td style="text-align: left;">Digital Cinema Initiatives</td>
+<td style="text-align: left;">~45% 人眼可见色</td>
+<td style="text-align: left;"><strong>数字电影标准</strong></td>
+<td style="text-align: left;">Apple 全系设备、HDR 电影/游戏、高端影音娱乐</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adobe RGB</strong></td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">~50% 人眼可见色</td>
+<td style="text-align: left;"><strong>印刷出版标准</strong></td>
+<td style="text-align: left;">专业摄影后期、印刷品打样（覆盖了 CMYK 色彩）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="volume-vs-coverage">关键概念：容积 (Volume) vs 覆盖率 (Coverage)<a class="headerlink" href="#volume-vs-coverage" title="Permanent link">&para;</a></h3>
+<p>在看评测时，你经常会看到“125% sRGB”这样的数据，这往往是商家的文字游戏。</p>
+<ul>
+<li><strong>覆盖率 (Coverage)</strong>：显示器显示的颜色与标准范围的<strong>重合度</strong>。最高只能是 100%。这是<strong>有效指标</strong>。</li>
+<li><strong>容积 (Volume)</strong>：显示器显示的颜色总量与标准范围总量的<strong>比值</strong>。可以超过 100%。这是<strong>参考指标</strong>。</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">📊 图解</p>
+<p>想象一个大桶（显示器色域）和一个小桶（sRGB标准）。</p>
+<ul>
+<li>如果大桶能把小桶完全装进去，覆盖率就是 100%。</li>
+<li>大桶比小桶大出的部分，就是多余的容积（比如 125% sRGB）。</li>
+</ul>
+</div>
+<h3 id="gamut-mapping">色域转换与映射 (Gamut Mapping)<a class="headerlink" href="#gamut-mapping" title="Permanent link">&para;</a></h3>
+<p>为什么我们需要"色域缩限"？</p>
+<ul>
+<li><strong>问题</strong>：Windows 系统默认认为所有屏幕都是 sRGB。当你用一台广色域 (P3) 显示器看一张 sRGB 图片时，显示器会把 sRGB 的红色（R:255）强行拉伸到 P3 的红色（R:255）。</li>
+<li><strong>结果</strong>：原本淡淡的红色变得鲜艳刺眼，人脸像喝醉了酒。</li>
+<li><strong>解决</strong>：优秀的显示器提供 <strong>sRGB 模式</strong>（色域缩限）。它通过内部算法，把 P3 的红色限制在 sRGB 的红点位置，从而还原真实的色彩。</li>
+</ul>
+<h3 id="rec2020">面向未来的标准：Rec.2020<a class="headerlink" href="#rec2020" title="Permanent link">&para;</a></h3>
+<p>除了 sRGB 和 P3，你可能还会听到 <strong>Rec.2020 (BT.2020)</strong>。
+*   <strong>地位</strong>：这是 4K/8K 超高清电视的终极标准。
+*   <strong>范围</strong>：极其宽广，覆盖了人眼可见色的 75% 以上（P3 只有 45%）。
+*   <strong>现状</strong>：目前没有任何显示器能完全覆盖 Rec.2020。顶级的激光电视也只能做到 90% 左右。如果你看到某款显示器标称支持 Rec.2020，通常是指它能<strong>接收</strong>这个信号，而不是能完整<strong>显示</strong>它。</p>
+<h3 id="_3">选购建议<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>普通用户 / 前端开发</strong>：认准 <strong>99%-100% sRGB</strong> 覆盖率。</li>
+<li><strong>Mac 用户 / 影音发烧友</strong>：认准 <strong>95%+ DCI-P3</strong>。</li>
+<li><strong>平面摄影师 / 印刷行业</strong>：认准 <strong>99% Adobe RGB</strong>。</li>
+<li><strong>必须功能</strong>：购买广色域显示器时，务必确认它有<strong>sRGB 模式</strong>且该模式下<strong>亮度可调</strong>（很多低端显示器切到 sRGB 模式后亮度被锁死，无法使用）。</li>
+</ul>
+<hr />
+<h2 id="2-color-accuracy-e">2. 色准 (Color Accuracy: ΔE)<a class="headerlink" href="#2-color-accuracy-e" title="Permanent link">&para;</a></h2>
+<p>色域决定了颜色的“多寡”，色准则决定了颜色的“对错”。</p>
+<h3 id="e-delta-e">ΔE (Delta E) 的含义<a class="headerlink" href="#e-delta-e" title="Permanent link">&para;</a></h3>
+<p>ΔE 是衡量显示颜色与真实颜色<strong>差异</strong>的数值。数值越小，色彩越准。</p>
+<ul>
+<li><strong>ΔE &lt; 1</strong>：<strong>人眼无法区分</strong>。顶级专业监视器水准。</li>
+<li><strong>ΔE &lt; 2</strong>：<strong>专业标准</strong>。肉眼几乎看不出差异，适合设计修图。</li>
+<li><strong>ΔE &lt; 3</strong>：<strong>优秀消费级</strong>。仔细对比可见细微差异，但日常使用完全没问题。</li>
+<li><strong>ΔE &gt; 5</strong>：<strong>明显偏色</strong>。红色可能偏橘，蓝色可能偏紫。</li>
+</ul>
+<h3 id="vs">避坑指南：平均值 vs 最大值<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h3>
+<p>厂商宣传的通常是 <strong>平均值 (Average ΔE)</strong>，这就像考试的平均分。
+*   <strong>陷阱</strong>：如果一台显示器平均分 90 (ΔE &lt; 2)，但这只是因为它在简单的颜色上考了 100 分，而在深蓝色上考了 0 分 (ΔE &gt; 6)。
+*   <strong>正解</strong>：严谨的评测会关注 <strong>最大值 (Maximum ΔE)</strong>。只有最大值也控制在合理范围内，才是真正的专业屏。</p>
+<h3 id="e">进阶知识：ΔE 的版本差异<a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
+<p>并不是所有的 ΔE 都是一样的。
+*   <strong>ΔE 1976 (ab)</strong>：最老的标准，计算简单，但与人眼感知偏差大。很多廉价显示器用这个数据来"刷分"。
+*   <strong>ΔE 2000 (00)</strong>：<strong>目前最准确的标准</strong>。它考虑了人眼对不同颜色的敏感度差异（人眼对灰色的色偏比对红色更敏感）。
+*   <strong>建议</strong>：查看评测时，优先参考 ΔE 2000 数据。</p>
+<h3 id="gamma">灰阶平衡与 Gamma 曲线<a class="headerlink" href="#gamma" title="Permanent link">&para;</a></h3>
+<p>除了彩色要准，灰色也要准。
+*   <strong>Gamma 2.2</strong>：Windows 和 sRGB 的标准 Gamma 值。如果 Gamma 偏低（如 1.8），画面会泛白；如果 Gamma 偏高（如 2.4），画面暗部会死黑。
+*   <strong>色温一致性</strong>：优秀的显示器，从 10% 灰到 100% 白，色温都应该稳定在 6500K。如果暗部发红、亮部发蓝，说明灰阶平衡很差。</p>
+<h3 id="_4">关于“出厂校色”与“后期校色”<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>很多中高端显示器附带“校色报告”。这表示厂商在出厂前对 sRGB 模式进行了修正。</p>
+<p><strong>什么时候需要自己校色？</strong>
+1.  <strong>背光老化</strong>：使用超过 1 年后，LED 背光衰减会导致色温变暖。
+2.  <strong>多屏协作</strong>：两台不同型号的显示器，即使都调到 6500K，肉眼看也可能不一样。只有通过校色仪统一标准才能解决。</p>
+<p><strong>校色流程简介</strong>：
+1.  购买/租赁校色仪（如 Calibrite Display Pro, Datacolor Spyder X）。
+2.  下载软件（推荐开源的 <strong>DisplayCAL</strong>，比原厂软件更准）。
+3.  挂上校色仪，运行 30-60 分钟。
+4.  生成 ICC 配置文件，系统自动加载。</p>
+<hr />
+<h2 id="3-color-depth">3. 色深 (Color Depth)<a class="headerlink" href="#3-color-depth" title="Permanent link">&para;</a></h2>
+<p>色深决定了色彩过渡的<strong>平滑程度</strong>。</p>
+<h3 id="8-bit-vs-10-bit">8-bit vs 10-bit：楼梯与坡道<a class="headerlink" href="#8-bit-vs-10-bit" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>8-bit</strong>：每个颜色通道有 256 个等级 ($2^8$)。总共 1670 万色。<ul>
+<li>像一个<strong>台阶明显的楼梯</strong>。在显示天空、夕阳等大面积渐变时，可能会看到一圈圈的<strong>色彩断层 (Banding)</strong>。</li>
+</ul>
+</li>
+<li><strong>10-bit</strong>：每个颜色通道有 1024 个等级 ($2^{10}$)。总共 10.7 亿色。<ul>
+<li>像一个<strong>平滑的坡道</strong>。色彩过渡如丝般顺滑，几乎看不到断层。</li>
+</ul>
+</li>
+</ul>
+<h3 id="10-bit-vs-810-frc">原生 10-bit vs 8抖10 (FRC)<a class="headerlink" href="#10-bit-vs-810-frc" title="Permanent link">&para;</a></h3>
+<p>真正的原生 10-bit 面板极其昂贵（通常用于医疗或好莱坞后期）。市面上 99% 的“10-bit 显示器”实际上使用的是 <strong>8-bit + FRC</strong> 技术。</p>
+<ul>
+<li><strong>FRC (Frame Rate Control)</strong>：利用人眼的视觉暂留效应，让像素在两个颜色之间快速闪烁，混合出中间的颜色。</li>
+<li><strong>结论</strong>：<strong>不需要纠结</strong>。现代 FRC 技术非常成熟，肉眼几乎无法区分“8抖10”和“原生10-bit”。只要它能显示 10.7 亿色，对消费者来说就是好 10-bit。</li>
+</ul>
+<h3 id="banding">为什么会出现色彩断层 (Banding)？<a class="headerlink" href="#banding" title="Permanent link">&para;</a></h3>
+<p>即使你买了 10-bit 显示器，有时看天空还是会有断层，原因可能是：
+1.  <strong>片源问题</strong>：视频本身是 8-bit 压制的（B站/YouTube 大部分视频）。
+2.  <strong>输出设置</strong>：显卡驱动里没开启 10-bit 输出。
+3.  <strong>HDR 要求</strong>：<strong>HDR 内容必须使用 10-bit</strong>。如果在 8-bit 模式下开启 HDR，色彩断层会非常严重，因为 HDR 的亮度范围大，需要更多层级来过渡。</p>
+<hr />
+<h2 id="4-cms">4. 色彩管理系统 (CMS)：被忽视的幕后英雄<a class="headerlink" href="#4-cms" title="Permanent link">&para;</a></h2>
+<p>买了好屏幕，颜色还是不对？这通常是<strong>色彩管理</strong>的锅。</p>
+<h3 id="icc">什么是 ICC 配置文件？<a class="headerlink" href="#icc" title="Permanent link">&para;</a></h3>
+<p>ICC 文件就像显示器的“身份证”，它告诉操作系统：“我的红色有多红，绿色有多绿”。
+*   <strong>没有 ICC</strong>：系统只能瞎猜，默认按 sRGB 输出。
+*   <strong>有 ICC</strong>：系统会根据 ICC 数据，把颜色转换成显示器能准确显示的数值。</p>
+<h3 id="windows-vs-macos">Windows vs macOS：天壤之别<a class="headerlink" href="#windows-vs-macos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>macOS</strong>：<strong>色彩管理的标杆</strong>。系统级支持极其完善，几乎所有 App（Safari, 预览, Final Cut）都能自动识别 ICC 并准确显示颜色。你把窗口从 P3 屏幕拖到 sRGB 屏幕，颜色会自动转换，肉眼几乎看不出变化。</li>
+<li><strong>Windows</strong>：<strong>一言难尽</strong>。<ul>
+<li><strong>桌面/资源管理器</strong>：不支持色彩管理（永远按 sRGB 显示）。</li>
+<li><strong>Chrome/Edge</strong>：支持，但需要手动设置。</li>
+<li><strong>专业软件 (PS/LR)</strong>：支持，但需要手动指定 ICC。</li>
+<li><strong>图片查看器</strong>：自带的“照片”应用支持，但很多第三方看图软件不支持。</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">💡 Windows 用户必读</p>
+<p>如果你买了广色域显示器，却发现图标颜色过饱和（刺眼），这是正常的，因为 Windows 桌面不支持色彩管理。请务必在显示器 OSD 菜单中开启 <strong>sRGB 模式</strong>，或者使用 <strong>Novideo_sRGB</strong> 等第三方工具进行全局钳制。</p>
+</div>
+<hr />
+<h2 id="4-color-temperature">4. 色温 (Color Temperature)<a class="headerlink" href="#4-color-temperature" title="Permanent link">&para;</a></h2>
+<p>色温决定了白色的“冷暖”。</p>
+<h3 id="6500k">为什么 6500K 看起来像黄色？<a class="headerlink" href="#6500k" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>6500K (D65)</strong>：这是国际标准的<strong>日光白</strong>，也是 sRGB 和 DCI-P3 的标准白点。</li>
+<li><strong>视觉偏差</strong>：亚洲用户通常偏好<strong>冷色温 (9300K)</strong>，加上手机屏幕出厂普遍偏冷（为了看起来更亮更通透）。因此，当你第一次切换到标准的 6500K 时，会觉得屏幕<strong>明显发黄</strong>。</li>
+<li><strong>建议</strong>：请坚持使用 6500K 两天。你的人眼白平衡机制适应后，再看回冷屏，你会发现冷屏蓝得刺眼且不真实。只有在 6500K 下，你看到的色彩才是创作者想表达的本色。</li>
+</ul>
+<h3 id="uniformity">屏幕均匀度 (Uniformity)<a class="headerlink" href="#uniformity" title="Permanent link">&para;</a></h3>
+<p>除了中心点的色温，还要关注全屏的一致性。
+*   <strong>阴阳屏</strong>：屏幕左边发红，右边发绿。这是大尺寸廉价面板的通病，非常影响修图和阅读体验，且<strong>无法通过校色仪修复</strong>。选购时建议参考评测中的“均匀度测试”。</p>
+<hr />
+<h2 id="5">5. 小白自测：你的屏幕颜色准吗？<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>不需要专业仪器，用肉眼也能发现明显问题：</p>
+<ol>
+<li>
+<p><strong>过饱和测试</strong>：</p>
+<ul>
+<li>在 Windows 下打开一张人像照片。如果人物皮肤红得像“关公”，或者图标颜色艳得刺眼，说明你的广色域屏幕没有正确映射到 sRGB。</li>
+<li><em>对策</em>：开启显示器 OSD 里的 <strong>sRGB 模式</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>灰阶测试</strong>：</p>
+<ul>
+<li>访问 <a href="http://www.lagom.nl/lcd-test/black.php">Lagom 灰阶测试页</a>。</li>
+<li>你能看清第一排前几个黑色方块吗？如果前 5 个方块都黑成一片，说明你的屏幕<strong>暗部细节丢失</strong>（Gamma 偏高或对比度太低）。</li>
+</ul>
+</li>
+<li>
+<p><strong>色温测试</strong>：</p>
+<ul>
+<li>拿一张标准的 A4 白纸放在屏幕旁边。</li>
+<li>打开一个纯白网页。对比白纸和屏幕。</li>
+<li>如果屏幕明显发蓝，说明是冷色温 (9300K)；如果发黄，接近 6500K（虽然刚开始看不习惯，但这才是准的）。</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="_5">本章小结<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>色域</strong>：普通用户认准 <strong>100% sRGB</strong>；Mac/影音用户认准 <strong>95%+ DCI-P3</strong>。</li>
+<li><strong>色准</strong>：<strong>ΔE &lt; 2</strong> 是好屏幕的分水岭。</li>
+<li><strong>色深</strong>：<strong>8-bit + FRC (10-bit)</strong> 是目前的主流甜点，足以应对 HDR 内容。</li>
+<li><strong>色温</strong>：请尝试适应 <strong>6500K</strong> 标准色温，它是准确色彩的基石。</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1738 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="AI生成、人工校验的显示技术参数深度解析手册。">
+      
+      
+        <meta name="author" content="AI-Powered Display Handbook Team">
+      
+      
+      
+        <link rel="prev" href="../02-color-science/">
+      
+      
+        <link rel="next" href="../04-hdr-enhancement/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>面板技术解析 - AI-Powered Display Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="AI-Powered Display Handbook" class="md-header__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI-Powered Display Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              面板技术解析
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  项目介绍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01-basic-parameters/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  基础参数详解
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../02-color-science/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  色彩科学
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  面板技术解析
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../04-hdr-enhancement/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  HDR 与视觉增强
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../05-interfaces/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  接口与连接
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../06-eye-care/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  护眼与健康
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../07-buying-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  选购指南
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../08-resolution-scaling/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  物理分辨率 vs 逻辑分辨率
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  术语表
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../calibration-settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  校色与设置
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI-Powered Display Handbook" class="md-nav__button md-logo" aria-label="AI-Powered Display Handbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI-Powered Display Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/codetilldie/ai-powered-display-handbook" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    codetilldie/ai-powered-display-handbook
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    项目介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-basic-parameters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基础参数详解
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-color-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    色彩科学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面板技术解析
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    面板技术解析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-lcd-tn-va-ips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. LCD 家族: TN, VA, IPS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. LCD 家族: TN, VA, IPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tn-twisted-nematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TN (Twisted Nematic) —— 偏科的短跑运动员
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#va-vertical-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VA (Vertical Alignment) —— 适合关灯看电影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ips-in-plane-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IPS (In-Plane Switching) —— 全能的六边形战士
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深入原理：液晶分子如何跳舞？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantum-dot-qled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶技术：量子点 (Quantum Dot / QLED)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IPS 的进化树
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        决策指南
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. OLED 技术: 像素级自发光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. OLED 技术: 像素级自发光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        致命弱点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#woled-vs-qd-oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主流分支：WOLED vs QD-OLED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 OLED 看文字不清晰？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烧屏机制与预防
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 防烧屏小贴士
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mini-led-lcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Mini-LED: LCD 的逆袭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Mini-LED: LCD 的逆袭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blooming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        劣势：光晕效应 (Blooming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        控光算法：硬件之外的软实力
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 新兴技术展望：未来已来
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 新兴技术展望：未来已来">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#micro-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro-LED：真正的终极形态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-ink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电子纸 (E-Ink) 显示器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-hdr-enhancement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HDR 与视觉增强
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-interfaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    接口与连接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-eye-care/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    护眼与健康
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-buying-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    选购指南
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-resolution-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    物理分辨率 vs 逻辑分辨率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    术语表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    校色与设置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-lcd-tn-va-ips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. LCD 家族: TN, VA, IPS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. LCD 家族: TN, VA, IPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tn-twisted-nematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TN (Twisted Nematic) —— 偏科的短跑运动员
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#va-vertical-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VA (Vertical Alignment) —— 适合关灯看电影
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ips-in-plane-switching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IPS (In-Plane Switching) —— 全能的六边形战士
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深入原理：液晶分子如何跳舞？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quantum-dot-qled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进阶技术：量子点 (Quantum Dot / QLED)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IPS 的进化树
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        决策指南
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. OLED 技术: 像素级自发光
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. OLED 技术: 像素级自发光">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        致命弱点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#woled-vs-qd-oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主流分支：WOLED vs QD-OLED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 OLED 看文字不清晰？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        烧屏机制与预防
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 防烧屏小贴士
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mini-led-lcd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Mini-LED: LCD 的逆袭
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Mini-LED: LCD 的逆袭">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blooming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        劣势：光晕效应 (Blooming)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        控光算法：硬件之外的软实力
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 新兴技术展望：未来已来
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 新兴技术展望：未来已来">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#micro-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Micro-LED：真正的终极形态
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-ink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电子纸 (E-Ink) 显示器
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">面板技术解析<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>如果把显示器比作一个舞台，那么<strong>面板 (Panel)</strong> 就是舞台的地板。无论剧本（色彩）多精彩，灯光（背光）多绚丽，如果地板本身质量不行，演出效果也会大打折扣。</p>
+<p>目前的显示器市场呈现出“三足鼎立”的态势：老当益壮的 <strong>LCD</strong>，画质王者 <strong>OLED</strong>，以及新晋挑战者 <strong>Mini-LED</strong>。</p>
+<hr />
+<h2 id="1-lcd-tn-va-ips">1. LCD 家族: TN, VA, IPS<a class="headerlink" href="#1-lcd-tn-va-ips" title="Permanent link">&para;</a></h2>
+<p>LCD (液晶显示器) 是目前最成熟、最普及的技术。它像一个三明治：中间是液晶层（控制光线通过），后面必须有一个<strong>背光层</strong>（提供光源）。根据液晶分子的排列方式，主要分为三类：</p>
+<h3 id="tn-twisted-nematic">TN (Twisted Nematic) —— 偏科的短跑运动员<a class="headerlink" href="#tn-twisted-nematic" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>一句话总结</strong>：为了速度牺牲了一切。</li>
+<li><strong>优点</strong>：<strong>极速</strong>。原生响应时间极快，刷新率极高（早期 360Hz+ 都是 TN）。</li>
+<li><strong>缺点</strong>：<strong>泛白</strong>。可视角度极差（稍微偏头就变色），色彩干瘪，对比度低。</li>
+<li><strong>适用人群</strong>：<strong>职业 FPS 电竞选手</strong> (CS:GO, Valorant)。除了这一类人，<strong>强烈不推荐</strong>普通用户购买。</li>
+</ul>
+<h3 id="va-vertical-alignment">VA (Vertical Alignment) —— 适合关灯看电影<a class="headerlink" href="#va-vertical-alignment" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>一句话总结</strong>：对比度高，但怕拖影。</li>
+<li><strong>优点</strong>：<strong>黑得下去</strong>。静态对比度高达 3000:1 - 4000:1，暗部细节丰富，漏光控制好。</li>
+<li><strong>缺点</strong>：<strong>拖影 (Smearing)</strong>。响应时间相对较慢，在暗色背景下移动物体容易出现“黑抹布”拖影。<em>注：三星高端 Odyssey 系列已解决此问题。</em></li>
+<li><strong>适用人群</strong>：影音爱好者、单机大作玩家、曲面屏爱好者。</li>
+</ul>
+<h3 id="ips-in-plane-switching">IPS (In-Plane Switching) —— 全能的六边形战士<a class="headerlink" href="#ips-in-plane-switching" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>一句话总结</strong>：色彩准，视角广，最万金油。</li>
+<li><strong>优点</strong>：<strong>色彩好</strong>。色准高，色域广，可视角度无敌（178°）。</li>
+<li><strong>缺点</strong>：<strong>对比度低</strong>。通常只有 1000:1，暗室看黑色会发灰，且容易有<strong>漏光</strong>和<strong>辉光 (IPS Glow)</strong>。</li>
+<li><strong>进化版</strong>：<ul>
+<li><strong>Fast IPS / Nano IPS</strong>：解决了响应时间慢的问题，现在也能做到 1ms GtG，是电竞主流。</li>
+<li><strong>IPS Black</strong>：将对比度提升至 2000:1，大幅改善了黑色表现。</li>
+</ul>
+</li>
+<li><strong>适用人群</strong>：<strong>绝大多数人</strong>。无论是办公、设计还是游戏，IPS 都是最不容易出错的选择。</li>
+</ul>
+<h3 id="_2">深入原理：液晶分子如何跳舞？<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>LCD 的核心原理是利用液晶分子在电压下发生旋转，从而控制光线的通过量。</p>
+<ul>
+<li><strong>TN (Twisted)</strong>：液晶分子像麻花一样扭曲。电压一加，麻花解开，光线阻断。这种结构最简单，所以跑得最快，但漏光和视角问题严重。</li>
+<li><strong>VA (Vertical)</strong>：液晶分子垂直于屏幕排列。不通电时完全阻断光线（所以黑位好）；通电时倒下让光通过。</li>
+<li><strong>IPS (In-Plane)</strong>：液晶分子在平面内旋转。无论怎么转，它们都平行于屏幕。这就是为什么 IPS 视角好（分子始终正对着你），但也因为分子间隙大，容易漏光。</li>
+</ul>
+<h3 id="quantum-dot-qled">进阶技术：量子点 (Quantum Dot / QLED)<a class="headerlink" href="#quantum-dot-qled" title="Permanent link">&para;</a></h3>
+<p>你经常听到 "QLED" 或 "Fast IPS + 量子点"，这是什么黑科技？</p>
+<ul>
+<li><strong>原理</strong>：在背光层和液晶层之间，加一层<strong>量子点膜 (QDEF)</strong>。这层膜上的纳米颗粒受到蓝光激发时，会发出极纯的红光和绿光。</li>
+<li><strong>效果</strong>：大幅提升色域覆盖率（轻松做到 99% Adobe RGB 或 95% P3），让色彩更鲜艳纯净。</li>
+<li><strong>应用</strong>：三星的 QLED 电视，以及高端的广色域 IPS 显示器。</li>
+</ul>
+<h3 id="ips">IPS 的进化树<a class="headerlink" href="#ips" title="Permanent link">&para;</a></h3>
+<p>IPS 家族非常庞大，选购时请认准以下关键词：</p>
+<ol>
+<li><strong>AH-IPS / 普通 IPS</strong>：老一代技术，响应时间慢 (5ms+)，现在主要用于办公屏。</li>
+<li><strong>Nano IPS (LG)</strong>：在背光中加入纳米粒子吸收杂光。<strong>色域极广</strong> (98% P3)，响应快，但对比度通常较低 (850:1)。</li>
+<li><strong>Fast IPS (友达/群创)</strong>：通过降低液晶层厚度和优化电压，将响应时间压缩到 1ms GtG。<strong>电竞首选</strong>。</li>
+<li><strong>IPS Black (LG)</strong>：最新技术。通过改变液晶分子排列，将对比度翻倍至 <strong>2000:1</strong>。黑位深邃，非常适合设计师，但刷新率通常只有 60Hz。</li>
+</ol>
+<h3 id="_3">决策指南<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[开始选购 LCD] --&gt; B{你的核心需求?}
+    B --&gt;|我是职业电竞哥| C[TN 面板]
+    B --&gt;|我喜欢关灯看电影| D[VA 面板]
+    B --&gt;|我全都要 / 我是设计师| E[IPS 面板]
+
+    E --&gt; F{IPS 细分}
+    F --&gt;|极致竞技| G["Fast IPS (1ms)"]
+    F --&gt;|鲜艳色彩| H[Nano IPS / QLED]
+    F --&gt;|专业设计| I["IPS Black (2000:1)"]</code></pre>
+<hr />
+<h2 id="2-oled">2. OLED 技术: 像素级自发光<a class="headerlink" href="#2-oled" title="Permanent link">&para;</a></h2>
+<p>OLED (有机发光二极管) 不需要背光层，<strong>每一个像素点都能自己发光</strong>。这带来了革命性的画质提升。</p>
+<h3 id="_4">核心优势<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>无限对比度</strong>：像素可以完全关闭，显示出<strong>纯粹的黑</strong>。通透感极强。</li>
+<li><strong>极速响应</strong>：&lt; 0.03ms。比最快的 LCD 还要快 10 倍以上，动态清晰度无敌。</li>
+<li><strong>超薄</strong>：像纸一样薄，甚至可以弯曲。</li>
+</ol>
+<h3 id="_5">致命弱点<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>烧屏 (Burn-in)</strong>：有机材料会老化。如果长时间显示固定的图标（如任务栏、血条），该区域会永久变暗，留下残影。</li>
+<li><strong>文字彩边</strong>：由于特殊的子像素排列（如 WBGR 或 三角形排列），在 Windows 下渲染文字时，边缘可能会出现红绿色的虚边，导致文字不够锐利。</li>
+</ol>
+<h3 id="woled-vs-qd-oled">主流分支：WOLED vs QD-OLED<a class="headerlink" href="#woled-vs-qd-oled" title="Permanent link">&para;</a></h3>
+<p>OLED 阵营内部也分为两派，它们各有千秋：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">特性</th>
+<th style="text-align: left;"><strong>WOLED (LG)</strong></th>
+<th style="text-align: left;"><strong>QD-OLED (Samsung)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>结构</strong></td>
+<td style="text-align: left;">白光 OLED + RGB 滤光片</td>
+<td style="text-align: left;">蓝光 OLED + 量子点激发层</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>亮度</strong></td>
+<td style="text-align: left;">较高 (特别是白光)</td>
+<td style="text-align: left;">极高 (色彩亮度更高)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>色域</strong></td>
+<td style="text-align: left;">98% P3</td>
+<td style="text-align: left;"><strong>99.3% P3</strong> (色彩更纯)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>抗光性</strong></td>
+<td style="text-align: left;"><strong>好</strong> (黑色纯净)</td>
+<td style="text-align: left;"><strong>差</strong> (强光下黑色发紫)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>文字清晰度</strong></td>
+<td style="text-align: left;">一般 (WBGR 排列)</td>
+<td style="text-align: left;">较差 (三角形排列)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>适用场景</strong></td>
+<td style="text-align: left;">电视、大屏游戏</td>
+<td style="text-align: left;">顶级电竞显示器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="oled">为什么 OLED 看文字不清晰？<a class="headerlink" href="#oled" title="Permanent link">&para;</a></h3>
+<p>这与<strong>子像素排列</strong>有关。
+*   <strong>传统 LCD</strong>：标准的 <strong>RGB</strong> 竖条排列。Windows 的 ClearType 渲染技术就是基于此设计的。
+*   <strong>WOLED</strong>：<strong>WBGR</strong> 排列（多了一个白色子像素）。
+*   <strong>QD-OLED</strong>：<strong>三角形</strong>排列。</p>
+<p><strong>后果</strong>：Windows 按照 RGB 的逻辑去渲染文字边缘的抗锯齿，结果在非 RGB 排列的屏幕上，就会出现错误的颜色（如文字左边发绿，右边发红）。
+<strong>解决</strong>：Mac 用户受影响较小（macOS 渲染机制不同）。Windows 用户可以使用 <strong>MacType</strong> 软件进行部分优化，但无法根除。</p>
+<h3 id="_6">烧屏机制与预防<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>OLED 烧屏本质上是<strong>像素点的不均匀老化</strong>。红色的像素点亮得久了，寿命就比蓝色的短，以后再显示白色时，就会偏色。</p>
+<p>厂商的自救措施：
+1.  <strong>像素位移 (Pixel Shift)</strong>：每隔几分钟，画面整体向上下左右移动几个像素。肉眼几乎不可见，但能防止像素长时间固定。
+2.  <strong>自动限制亮度 (ABL)</strong>：当全屏显示白色时，强制降低亮度，减少发热和老化。
+3.  <strong>面板刷新 (Panel Refresh)</strong>：关机后，显示器会自动运行几分钟的电压补偿程序，修复轻微的残影。<strong>切记不要用完直接拔电源！</strong></p>
+<h3 id="_7">💡 防烧屏小贴士<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>设置<strong>黑色壁纸</strong>。</li>
+<li>开启<strong>自动隐藏任务栏</strong>。</li>
+<li>设置 5 分钟<strong>自动息屏</strong>。</li>
+<li>不要把 OLED 当作长时间处理文档的生产力工具。</li>
+</ul>
+<hr />
+<h2 id="3-mini-led-lcd">3. Mini-LED: LCD 的逆袭<a class="headerlink" href="#3-mini-led-lcd" title="Permanent link">&para;</a></h2>
+<p>Mini-LED 本质上<strong>依然是 LCD</strong>，但它把背光层换成了成千上万颗微小的 LED 灯珠，并把它们划分成几百上千个<strong>独立控光分区</strong>。</p>
+<h3 id="_8">优势<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>超高亮度</strong>：轻松突破 1000 nits，甚至 2000 nits。阳光感十足，HDR 爆发力远超 OLED。</li>
+<li><strong>不烧屏</strong>：无机材料，寿命长，适合当主力生产力工具。</li>
+</ul>
+<h3 id="blooming">劣势：光晕效应 (Blooming)<a class="headerlink" href="#blooming" title="Permanent link">&para;</a></h3>
+<p>当在纯黑背景上显示一个小亮点（如星空、鼠标指针）时，由于背光分区不够小，点亮的区域会溢出，导致亮点周围出现一圈灰白色的“光晕”。</p>
+<p><strong>分区数量与体验的关系</strong>：
+*   <strong>384 - 576 分区</strong>：入门级。光晕明显，字幕周围会有光柱。
+*   <strong>1152 分区</strong>：<strong>甜点级</strong>。光晕控制良好，日常使用不易察觉。
+*   <strong>2304+ 分区</strong>：旗舰级。光晕极小，接近 OLED 观感。</p>
+<h3 id="_9">控光算法：硬件之外的软实力<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>分区多不代表效果一定好，<strong>算法</strong>才是灵魂。
+*   <strong>响应速度</strong>：如果算法太慢，鼠标划过黑色背景时，背光会“慢半拍”才亮起，形成拖影。
+*   <strong>光晕抑制策略</strong>：
+    *   <strong>激进策略</strong>：优先保证亮度，允许少量光晕（适合看电影）。
+    *   <strong>保守策略</strong>：优先压制光晕，哪怕降低亮点亮度（适合办公）。</p>
+<hr />
+<h2 id="4">4. 新兴技术展望：未来已来<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="micro-led">Micro-LED：真正的终极形态<a class="headerlink" href="#micro-led" title="Permanent link">&para;</a></h3>
+<p>不要把它和 Mini-LED 搞混。
+*   <strong>Mini-LED</strong> = LCD + 更好的背光。
+*   <strong>Micro-LED</strong> = <strong>自发光</strong> (像 OLED)。</p>
+<p>它将 LED 灯珠微缩到微米级别，直接作为像素点。它拥有 OLED 的一切优点（自发光、无限对比度、极速响应），同时拥有 LCD 的优点（无机材料、不烧屏、超高亮度）。
+<strong>现状</strong>：技术太难，成本太高。目前仅用于百万元级的商用巨幕或 AR 眼镜。距离民用显示器普及还有很长的路要走。</p>
+<h3 id="e-ink">电子纸 (E-Ink) 显示器<a class="headerlink" href="#e-ink" title="Permanent link">&para;</a></h3>
+<p>除了发光屏幕，还有一种<strong>反射式屏幕</strong>。
+*   <strong>原理</strong>：像Kindle一样，靠反射环境光显示，自己不发光。
+*   <strong>优点</strong>：<strong>绝对护眼</strong>。看它就像看纸质书，完全没有蓝光和频闪焦虑。
+*   <strong>缺点</strong>：刷新率极低（鼠标拖影严重），通常只有黑白。
+*   <strong>适用</strong>：纯代码编写、纯文档阅读的重度文字工作者（如大上科技 DASUNG 的产品）。</p>
+<hr />
+<h2 id="_10">本章小结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">技术</th>
+<th style="text-align: left;">核心优势</th>
+<th style="text-align: left;">核心劣势</th>
+<th style="text-align: left;">推荐场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>IPS (LCD)</strong></td>
+<td style="text-align: left;">色彩准、寿命长、便宜</td>
+<td style="text-align: left;">对比度低、漏光</td>
+<td style="text-align: left;">办公、设计、普通游戏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OLED</strong></td>
+<td style="text-align: left;"><strong>画质天花板</strong>、响应极速</td>
+<td style="text-align: left;"><strong>烧屏风险</strong>、文字彩边</td>
+<td style="text-align: left;">纯游戏、影音娱乐</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mini-LED</strong></td>
+<td style="text-align: left;"><strong>超高亮度</strong>、不烧屏</td>
+<td style="text-align: left;"><strong>光晕效应</strong>、机身厚重</td>
+<td style="text-align: left;">HDR 视频剪辑、兼顾办公与娱乐</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
