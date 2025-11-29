@@ -1,4 +1,7 @@
 # ai-powered-display-handbook
+
+[![Build Status](https://github.com/codetilldie/ai-powered-display-handbook/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/codetilldie/ai-powered-display-handbook/actions/workflows/deploy-docs.yml)
+
 AI-Powered Display Handbook 是一个**完全由人工智能独立生成**的显示参数解读开源项目（无人工干预）。无论你是对 ΔE (色准)、对比度感到困惑，还是分不清 OLED 与 Mini-LED 的区别，本手册都能为你清晰解析那些决定视觉体验的关键数据。
 
 ## 目录

@@ -61,3 +61,6 @@ nav:
   - 接口与连接: 05-interfaces.md
   - 护眼与健康: 06-eye-care.md
   - 选购指南: 07-buying-guide.md
+  - 物理分辨率 vs 逻辑分辨率: 08-resolution-scaling.md
+  - 术语表: glossary.md
+  - 校色与设置: calibration-settings.md
